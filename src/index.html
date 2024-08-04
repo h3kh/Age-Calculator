@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-blue-800 font-yekan text-2xl">
+    <div class="flex justify-center items-center w-screen h-screen">
+      <div
+        class="calc-age-box bg-gray-200 w-auto h-auto text-center pb-10 blur-[2px]"
+      >
+        <h1
+          class="bg-white text-center p-2 text-2xl border-b-2 border-gray-400"
+        >
+          محاسبه سن
+        </h1>
+        <form class="flex flex-row-reverse p-5">
+          <div class="ml-3">
+            <label class="" for="day">روز تولد</label>
+            <br />
+            <input class="input-style" type="text" id="day" />
+          </div>
+          <div class="ml-3">
+            <label for="month">ماه تولد</label> <br />
+            <select class="input-style px-16 text-xl" type="text" id="month">
+              <option selected value="1">فروردین</option>
+              <option value="2">اردیبهشت</option>
+              <option value="3">خرداد</option>
+              <option value="4">تیر</option>
+              <option value="5">مرداد</option>
+              <option value="6">شهریور</option>
+              <option value="7">مهر</option>
+              <option value="8">آبان</option>
+              <option value="9">آذر</option>
+              <option value="10">دی</option>
+              <option value="11">بهمن</option>
+              <option value="12">اسفند</option>
+            </select>
+          </div>
+          <div class="ml-3">
+            <label for="year">سال تولد</label><br />
+            <input class="input-style" type="text" id="year" />
+          </div>
+        </form>
+        <button class="bg-blue-700 px-8 py-2 text-white">محاسبه</button>
+      </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div
+          class="relative bg-gray-300 my-[20%] mx-auto border-5 rounded-md text-center w-80 h-44"
+        >
+          <div
+            class="bg-teal-900 text-center w-full mb-10 flex justify-center relative rounded-b-2xl h-12 p-2 text-xl"
+          >
+            <p class="text-white">سن شما مطابق تقویم شمسی</p>
+            <button
+              class="close text-white text-2xl hover:text-gray-500 absolute top-0 right-3"
+            >
+              &times;
+            </button>
+          </div>
+          <p class="text-teal-900 modal-text"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

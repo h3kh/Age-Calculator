@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @font-face {
+    font-family: 'customFont';
+    src: url(font\Far_Yekan\Far_Yekan.ttf) format('truetype');
+  }
+  .form-input,
+  .form-checkbox,
+  .form-textarea,
+  .form-select,
+  .form-multiselect {
+    @apply focus:ring-0;
+  }
+  .input-style {
+    @apply focus:ring-blue-400 focus:border-blue-400 focus:ring-1 rounded-sm text-black mt-2 text-center;
+  }
+  .modal {
+    @apply fixed top-0 left-0  w-screen h-screen  bg-[rgba(31,31,31,0.5)];
+  }
+}
